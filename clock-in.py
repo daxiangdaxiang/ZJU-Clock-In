@@ -173,7 +173,7 @@ def main(username, password):
     try:
         res = dk.post()
         if str(res['e']) == '0':
-            #dingtalk_print(bot, '已为您打卡成功！')
+            print(bot, '已为您打卡成功！')
         else:
             print(res)
             #dingtalk_print(bot, res['m'])
